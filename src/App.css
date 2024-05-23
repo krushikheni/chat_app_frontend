@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: cursive;
+}
+
+.formDiv {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formDiv input {
+  font-family: cursive;
+  width: 85%;
+  background-color: transparent;
+  height: 50px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+}
+
+.formDiv button {
+  font-family: cursive;
+  font-weight: bold;
+  width: 10%;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+
+.chats {
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  overflow: auto;
+  scroll-behavior: smooth;
+  margin-top: 10px;
+}
+.chats::-webkit-scrollbar {
+  width: 13px;
+}
+
+.currentUserList,
+.userList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.currentUserList {
+  justify-content: flex-end;
+}
+
+.currentUserList p {
+  background-image: linear-gradient(
+    to right,
+    #c1c161 0%,
+    #c1c161 0%,
+    #d4d4b1 100%
+  );
+  color: black;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+.currentUserList h3 {
+  background-color: aliceblue;
+  color: black;
+  padding: 7px 15px;
+  border-radius: 50%;
+}
+
+.userList p {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  color: black;
+  padding: 7px 15px;
+  border-radius: 15px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+.userList h3 {
+  background-color: aliceblue;
+  color: black;
+  padding: 7px 15px;
+  border-radius: 50%;
+}
